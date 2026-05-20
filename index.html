@@ -68,6 +68,14 @@
       white-space: nowrap;
     }
 
+    header.top .author {
+      margin: 4px 0 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+    }
+
     main.grid {
       display: grid;
       grid-template-columns: 1fr 1.05fr 1fr;
@@ -334,6 +342,17 @@
       max-height: 212px;
     }
 
+    .figure-cite {
+      margin: 6px 0 0;
+      font-size: 10px;
+      line-height: 1.32;
+      color: var(--muted);
+    }
+
+    .figure-cite em {
+      font-style: italic;
+    }
+
     /* FDM diagram: image-only panel, caption overlay matches center column photos */
     .panel--media-only {
       padding: 0;
@@ -439,6 +458,7 @@
   <div class="slide" id="poster-slide" role="document">
     <header class="top">
       <h1>Polylactic acid (PLA): from synthesis to the FDM print layer</h1>
+      <p class="author">Avery Bird</p>
     </header>
 
     <main class="grid">
@@ -476,6 +496,10 @@
                 decoding="async"
               />
             </figure>
+            <p class="figure-cite">
+              Cheng, Y., Deng, S., Chen, P., &amp; Ruan, R. (2009). Polylactic acid (PLA) synthesis and
+              modifications: A Review. <em>Frontiers of Chemistry in China</em>, 4(3), 259–264.
+            </p>
           </div>
         </div>
       </section>
@@ -572,6 +596,11 @@
                 decoding="async"
               />
             </figure>
+            <p class="figure-cite">
+              Cuiffo, M. A., Snyder, J., Elliott, A. M., Romero, N., Kannan, S., &amp; Halada, G. P.
+              (2017). Impact of the fused deposition (FDM) printing process on polylactic acid (PLA)
+              chemistry and structure. <em>Applied Sciences</em>, 7(6), 579.
+            </p>
           </div>
         </div>
       </section>
